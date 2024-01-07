@@ -12,16 +12,27 @@ import java.util.Scanner;
 public class L3_1{
    public static void main(String[] args){
       Scanner sc=new Scanner(System.in);
-      System.out.println("\nEnter marks of Sub-1 : ");
-      float a=sc.nextFloat();
-      System.out.println("\nEnter marks of Sub-2 : ");
-      float b=sc.nextFloat();
-      System.out.println("\nEnter marks of Sub-3 : ");
-      float c=sc.nextFloat();
-      System.out.println("\nEnter marks of Sub-4 : ");
-      float d=sc.nextFloat();
-      System.out.println("\nEnter marks of Sub-5 : ");
-      float e=sc.nextFloat();
+      float a,b,c,d,e;
+      do{
+         System.out.println("\nEnter marks of Sub-1 : ");
+         a=sc.nextFloat();
+      }while(a<=0 || a>=100);
+      do {
+         System.out.println("\nEnter marks of Sub-2 : ");
+         b=sc.nextFloat();
+      }while (b<=0 || b>=100);
+      do {
+         System.out.println("\nEnter marks of Sub-3 : ");
+         c=sc.nextFloat();
+      }while (c<=0 || c>=100);
+      do {
+         System.out.println("\nEnter marks of Sub-4 : ");
+         d=sc.nextFloat();
+      }while (d<=0 || d>=100);
+      do {
+         System.out.println("\nEnter marks of Sub-5 : ");
+         e=sc.nextFloat();
+      }while (e<=0 || e>=100);
       double f=(a+b+c+d+e)/5.0;
       if(f>=60){
          System.out.println("\nPercentage = "+f+" \nFirst Division");
