@@ -10,6 +10,5 @@ public class L3_2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter NO. or String : ");
         String s = sc.nextLine();
-        int i;
     }
 }
