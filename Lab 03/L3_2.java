@@ -4,6 +4,7 @@ Write a program to calculate the division obtained by the student.
  */
 
 import java.util.Scanner;
+
 public class L3_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
