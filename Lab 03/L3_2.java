@@ -25,7 +25,7 @@ public class L3_2 {
         else{
             System.out.println("\nPalindrome (While Loop)");
         }
-    
+
     //Using For Loop
         for(start=0,x=1,end=s.length()-1;start<=(s.length()/2);start++,end--){
             if(s.charAt(start)!=s.charAt(end)){
@@ -34,10 +34,10 @@ public class L3_2 {
             }
         }
         if(x==0){
-            System.out.println("\n\nNot Palindrome (For Loop)");
+            System.out.println("Not Palindrome (For Loop)");
         }
         else{
-            System.out.println("\n\nPalindrome (For Loop)");
+            System.out.println("Palindrome (For Loop)");
         }
     }
 }
