@@ -14,5 +14,6 @@ public class L4_5 {
           for(i=s.length()/2;i<s.length();i++){
                System.out.print(""+s.charAt(i));
           }
+          sc.close();
      }
 }

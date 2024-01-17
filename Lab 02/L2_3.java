@@ -19,5 +19,6 @@ public class L2_3{
             case '/' : System.out.println("\nDivision = "+(a/b));
             break;
         }
+        sc.close();
     }
 }

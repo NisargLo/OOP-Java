@@ -46,5 +46,6 @@ public class L3_1{
       else if(f<40){
          System.out.println("\nPercentage = "+f+" \nFail");
       }
+      sc.close();
    } 
 }

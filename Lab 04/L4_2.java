@@ -23,6 +23,7 @@ public class L4_2 {
                }
           }
           System.out.println("\nVowels - "+v+"\nConsonants - "+c);
+          sc.close();
      }
 }
 

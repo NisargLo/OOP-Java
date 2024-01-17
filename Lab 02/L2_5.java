@@ -7,5 +7,6 @@ public class L2_5{
         float f=sc.nextFloat();
         float c=(f-32)*5/9;
         System.out.println("\nCelsius = "+c);
+        sc.close();
     }
 }

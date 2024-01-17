@@ -39,5 +39,6 @@ public class L3_2 {
         else{
             System.out.println("Palindrome (For Loop)");
         }
+        sc.close();
     }
 }

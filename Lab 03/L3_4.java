@@ -18,5 +18,6 @@ public class L3_4 {
         else{
             System.out.println("\nNot Prime");
         }
+        sc.close();
     }
 }

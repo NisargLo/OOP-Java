@@ -9,5 +9,6 @@ public class L1_5 {
           System.out.println("Enter NO. - ");
           int a = sc.nextInt();
           System.out.println("\nYour Integer = "+a);
+          sc.close();
      }
 }

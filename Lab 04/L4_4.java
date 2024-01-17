@@ -17,5 +17,6 @@ public class L4_4 {
           for(int i=a.length-1;i>=0;i--){
                System.out.println("Your NO. "+(i+1)+" - "+a[i]);
           }
+          sc.close();
      }
 }

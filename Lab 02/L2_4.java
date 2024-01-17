@@ -7,5 +7,6 @@ public class L2_4 {
         int r=sc.nextInt();
         double a=(3.14)*(r*r);
         System.err.println("\nArea of Circle = "+a);
+        sc.close();
     }
 }

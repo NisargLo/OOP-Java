@@ -41,5 +41,6 @@ public class L3_3 {
         int max;
         max=(a>b) ? ((a>c) ? a : c) : ((b>c) ? b : c);
         System.out.println("\n"+max+" is Max. (Ternary)");
+        sc.close();
     }
 }

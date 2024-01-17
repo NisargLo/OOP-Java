@@ -15,5 +15,6 @@ public class L4_3 {
      }
      av = (float)s/4;
      System.out.println("Average = "+av);
+     sc.close();
      }
 }
