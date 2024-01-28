@@ -7,10 +7,11 @@
      * *
      *
 */
+
 public class L4_8 {
      public static void main(String[] args) {
           byte i,j;
-          for(i=1;i<=3;i++){
+          for(i=1;i<=3;i++) {
                for(j=0;j<i;j++){
                     System.out.print("*");
                }
