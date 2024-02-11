@@ -8,7 +8,7 @@
      *
 */
 
-public class n {
+public class L4_8 {
      public static void main(String[] args) {
           byte i,j;
           for(i=1;i<=5;i++) {
