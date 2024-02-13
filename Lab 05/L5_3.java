@@ -13,12 +13,12 @@ public class L5_3 {
                System.out.println("\nEnter Sentence "+i+" :");
                s=sc.nextLine();
                if(s.equalsIgnoreCase("quit")){
-                    break;
+                    sc.close();
+                    return;
                }
                Sentence S=new Sentence(s);
                S.vowelCount();
           }
-          sc.close();
      }
 }
 
