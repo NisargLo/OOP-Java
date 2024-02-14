@@ -8,19 +8,19 @@ public class L5_7 {
         System.out.println("\nEnter NO. (which is stored in static variable) :");
         int n=sc.nextInt();
         Check c1=new Check();
-        c1.thisN1(n);
+        c1.thisN(n);
         c1.printN();
         sc.close();
     }
 }
 
 class Check{
-    static int n;
-    public void thisN1(int n){
+    int n;
+    public void thisN(int n){
         this.n=n;
     }
 
     public void printN(){
-        System.out.println("\nYour No. N = "+n+"\nHence, 'this' keyword can access static variables of class.");
+        System.out.println("\nYour No. = "+n+"\nHence, 'this' keyword can access 'static' variables of class.\nBut 'this' keyword can't access variables of class if method is 'static'.");
     }
 }
