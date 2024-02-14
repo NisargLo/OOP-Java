@@ -1,6 +1,6 @@
 //Sorting in Ascending order
 
-public class sort{
+public class Sorting{
      public static void main(String[] args) {
           int[] a = {4,2,1,9,6,3,7,5,8,10};
           int i,j,temp;
@@ -18,7 +18,7 @@ public class sort{
                System.out.print(a[i]+", ");
           }
 
-          //using method given in ppt
+          // other method :-
 
           int[] b = {4,2,1,9,6,3,7,5,8,10};
           for(i=0;i<b.length;i++){
