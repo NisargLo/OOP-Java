@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
-public class Scan_Methods {
+class Scan_DifferentMethods {
      static int n,i;
      static double d;
      static{
           Scanner sc=new Scanner(System.in);
-          System.out.println("\nHow many values of \'X\' & \'Y\' will you enter :");
+          System.out.println("\nHow many values of 'X' & 'Y' will you enter :");
           n=sc.nextInt();
-          System.out.println("\nEnter value of \'X\' at which you want to find \'Y\' :");
+          System.out.println("\nEnter value of 'X' at which you want to find 'Y' :");
           d=sc.nextDouble();
      }
      double[] x=new double[n];
      double[] y=new double[n];
-     public Scan_Methods(){
+     public Scan_DifferentMethods(){
           Scanner sc=new Scanner(System.in);
           for(i=0;i<x.length;i++){
                System.out.println("\nEnter X ( "+(i+1)+" ) :");

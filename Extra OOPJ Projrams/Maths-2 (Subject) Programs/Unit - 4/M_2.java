@@ -2,9 +2,9 @@
 
 public class M_2 {
      public static void main(String[] args) {
-          double ans=0,d=(double)Scan_Methods.d;
-          int i,j,n=Scan_Methods.n;
-          Scan_Methods s=new Scan_Methods();
+          double ans=0,d=(double)Scan_DifferentMethods.d;
+          int i,j,n=Scan_DifferentMethods.n;
+          Scan_DifferentMethods s=new Scan_DifferentMethods();
           double[] x=new double[n];
           double[] y=new double[n];
           double[] a=new double[n];
