@@ -1,14 +1,15 @@
+//Scan values of X & Y, and methods which are useful for Unit-4
+
 import java.util.Scanner;
 
-class Scan_DifferentMethods {
-     static int n,i;
-     static double d;
+public class Scan_DifferentMethods {
+     static int n;
+     int m1,t1,t2,i;
+     double m2,d;
      static{
           Scanner sc=new Scanner(System.in);
           System.out.println("\nHow many values of 'X' & 'Y' will you enter :");
           n=sc.nextInt();
-          System.out.println("\nEnter value of 'X' at which you want to find 'Y' :");
-          d=sc.nextDouble();
      }
      double[] x=new double[n];
      double[] y=new double[n];
@@ -22,28 +23,60 @@ class Scan_DifferentMethods {
                System.out.println("\nEnter Y ( "+(i+1)+" ) :");
                y[i]=sc.nextDouble();
           }
-          
+          System.out.println("\nEnter value of 'X' at which you want to find 'Y' :");
+          d=sc.nextDouble();
      }
      public int factorial(int x){
-          byte i;
-          int m1=1;
+          m1=1;
           for(i=1;i<=x;i++){
-               m1=m1*i;
+               m1*=i;
           }
           return m1;
      }
-     public double p_Minus(double a, int b){
-          double m2=1;
-          int i;
-          for(i=0;i<=(b-1);i++){
-               m2=m2*(a-i);
+     public double p_Minus(double p, int b){
+          m2=1;
+          for(i=0;i<b;i++){
+               m2*=(p-i);
           }
           return m2;
      }
-     public double p_Plus(double a, int b){
-          double m2=1;
-          for(int i=0;i<=(b-1);i++){
-               m2=m2*(a+i);
+     public double p_Plus(double p, int b){
+          m2=1;
+          for(i=0;i<b;i++){
+               m2*=(p+i);
+          }
+          return m2;
+     }
+     public double p_Minus_Plus(double p, int b){
+          t1=t2=0;
+          m2=1;
+          for(i=0;i<b;i++){
+               if(i%2==0){
+                    if(i>0){
+                         t1++;
+                    }
+                    m2*=(p+t1);
+               }
+               else{
+                    t2=~t1;
+                    m2*=(p+t2);
+               }
+          }
+          return m2;
+     }
+     public double p_Plus_Minus(double p, int b){
+          t1=t2=0;
+          m2=1;
+          for(i=0;i<b;i++){
+               if(i%2!=0){
+                    t1++;
+                    m2*=(p+t1);
+               }
+               else{
+                    t2=~t1;
+                    t2++;
+                    m2*=(p+t2);
+               }
           }
           return m2;
      }
