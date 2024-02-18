@@ -14,10 +14,10 @@ public class M_4 {
           }
           for (i = 0; i < n; i++) {
                if ((x[i] - s.d) >= 0 && i > 0) {
-                    if (s.d < (x[0] + x[n - 1]) / 2) {
-                         t = i;
-                    } else {
+                    if (s.d > (x[0] + x[n - 1]) / 2) {
                          t = i - 1;
+                    } else {
+                         t = i;
                     }
                     break;
                }

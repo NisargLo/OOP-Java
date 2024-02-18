@@ -2,7 +2,7 @@
 
 public class M_5 {
      public static void main(String[] args) {
-          int i, j, c = 1, t = 0, n = Scan_DifferentMethods.n;
+          int i, j, t = 0, n = Scan_DifferentMethods.n;
           Scan_DifferentMethods s = new Scan_DifferentMethods();
           double ans = 0, p;
           double[] x = new double[n];
@@ -14,11 +14,7 @@ public class M_5 {
           }
           for (i = 0; i < n; i++) {
                if ((x[i] - s.d) >= 0 && i > 0) {
-                    if (s.d < (x[0] + x[n - 1]) / 2) {
-                         t = i;
-                    } else {
-                         t = i - 1;
-                    }
+                    t = i;
                     break;
                }
           }
@@ -32,24 +28,20 @@ public class M_5 {
                          t--;
                     }
                     for (j = 1; j < n; j++) {
-                         if (j <= n - c) {
-                              y[j - 1] = y[j] - y[j - 1];
-                         } else {
-                              y[j - 1] = 0;
-                              y[j] = 0;
-                         }
+                         y[j - 1] = y[j] - y[j - 1];
                     }
-                    c++;
                }
           }
           for (i = 1; i < n; i++) {
                if (a[i] != 0) {
                     ans = ans + s.p_Plus_Minus(p, i) * a[i] / s.factorial(i);
+                    System.out.println("\nans : " + ans);
                } else {
                     break;
                }
           }
           ans += a[0];
+          System.out.println("\na[0] : " + a[0]);
           System.out.printf("\nAnswer : y(%.2f) = %.5f", s.d, ans);
           System.out.println();
      }
