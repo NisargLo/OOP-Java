@@ -31,6 +31,7 @@ public class M_4 {
                     if (i % 2 != 0 && i > 0) {
                          t--;
                     }
+                    c = 0;
                     for (j = 1; j < n; j++) {
                          if (j <= n - c) {
                               y[j - 1] = y[j] - y[j - 1];
