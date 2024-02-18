@@ -14,11 +14,7 @@ public class M_5 {
           }
           for (i = 0; i < n; i++) {
                if ((x[i] - s.d) >= 0 && i > 0) {
-                    if (s.d < (x[0] + x[n - 1]) / 2) {
-                         t = i;
-                    } else {
-                         t = i - 1;
-                    }
+                    t = i;
                     break;
                }
           }
