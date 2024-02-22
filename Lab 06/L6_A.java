@@ -11,8 +11,8 @@ public class L6_A {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("NO. of Students entered are above.");
-        int n = sc.nextInt();
+        int n = Integer.parseInt(args[0]);
+        System.out.println("\nNO. of Students = "+n);
         Student[] s = new Student[n];
         for (int i = 0; i < n; i++) {
             System.out.println("\nStudent " + (i + 1) + " :-");
@@ -26,6 +26,8 @@ public class L6_A {
             System.out.println("\nStudent " + (i + 1) + " :-");
             s[i].getNoOfSub();
             s[i].spi = s[i].calculateSPI();
+        }
+        for(i=0;i<n;i++){
             System.out.print("\nStudent " + (i + 1) + ", ID No. - " + s[i].id_no);
             System.out.print("\nStudent " + (i + 1) + ", No. of Subjects - " + s[i].no_of_sub);
             System.out.print("\nStudent " + (i + 1) + ", SPI - " + s[i].spi + "\n");
