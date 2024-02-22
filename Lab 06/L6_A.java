@@ -1,6 +1,6 @@
 /*
-    Declare a class called student having following data members: id_no, no_of_subjects_registered, subject_code, subject_credits, grade_obtained and spi. 
-    Define constructor and calculate_spi methods. Define main to instantiate an array for objects of class student to process data of n students to be given as
+    Declare a class called student having following data members: id_no, no_of_sub, sub_code, sub_credits, grade and spi. 
+    Define constructor and calculateSPI methods. Define main to instantiate an array for objects of class student to process data of n students to be given as
     command line arguments.
 */
 
@@ -12,7 +12,7 @@ public class L6_A {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(args[0]);
-        System.out.println("\nNO. of Students = "+n);
+        System.out.println("\nNO. of Students = " + n);
         Student[] s = new Student[n];
         for (int i = 0; i < n; i++) {
             System.out.println("\nStudent " + (i + 1) + " :-");
@@ -27,7 +27,7 @@ public class L6_A {
             s[i].getNoOfSub();
             s[i].spi = s[i].calculateSPI();
         }
-        for(i=0;i<n;i++){
+        for (i = 0; i < n; i++) {
             System.out.print("\nStudent " + (i + 1) + ", ID No. - " + s[i].id_no);
             System.out.print("\nStudent " + (i + 1) + ", No. of Subjects - " + s[i].no_of_sub);
             System.out.print("\nStudent " + (i + 1) + ", SPI - " + s[i].spi + "\n");
