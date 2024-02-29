@@ -3,6 +3,11 @@
 import java.util.Scanner;
 
 public class RK_1 {
+     public double func(double x,double y){
+          // Write your function below :-
+          return (y-x)/(y+x) ;
+     }
+
      public static void main(String[] args) {
           Scanner sc=new Scanner(System.in);
           System.out.println("\nImportant Note : Write your function in 8th line of Java-Code after keyword \'return\' and before \';\'");
@@ -42,11 +47,6 @@ public class RK_1 {
                }
           }
           sc.close();
-     }
-     
-     public double func(double x,double y){
-          // Write your function below :-
-          return (y-x)/(y+x) ;
      }
 }
 

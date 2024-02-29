@@ -3,6 +3,11 @@
 import java.util.Scanner;
 
 public class RK_2 {
+     public double func(double x,double y){
+          // Write your function below :-
+          return (y-x)/(Math.pow(x,0.5)*Math.pow(y,0.5)) ;
+     }
+     
      public static void main(String[] args) {
           Scanner sc=new Scanner(System.in);
           System.out.println("\nImportant Note : Write your function in 8th line of Java-Code after keyword \'return\' and before \';\'");
@@ -48,11 +53,6 @@ public class RK_2 {
                }
           }
           sc.close();
-     }
-
-     public double func(double x,double y){
-          // Write your function below :-
-          return (y-x)/(Math.pow(x,0.5)*Math.pow(y,0.5)) ;
      }
 }
 

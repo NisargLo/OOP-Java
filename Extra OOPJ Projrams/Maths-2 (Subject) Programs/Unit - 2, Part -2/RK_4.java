@@ -3,6 +3,11 @@
 import java.util.Scanner;
 
 public class RK_4 {
+     public double func(double x,double y){
+          // Write your function below :-
+          return 3*(Math.pow(Math.E,x))+(2*y) ;
+     }
+     
      public static void main(String[] args) {
           Scanner sc=new Scanner(System.in);
           System.out.println("\nImportant Note : Write your function in 8th line of Java-Code after keyword \'return\' and before \';\'");
@@ -54,11 +59,6 @@ public class RK_4 {
                }
           }
           sc.close();
-     }
-
-     public double func(double x,double y){
-          // Write your function below :-
-          return 3*(Math.pow(Math.E,x))+(2*y) ;
      }
 }
 
