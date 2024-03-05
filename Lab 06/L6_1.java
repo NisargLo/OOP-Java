@@ -6,7 +6,7 @@
 
 import java.util.Scanner;
 
-public class L6_A {
+public class L6_1 {
     static short i;
 
     public static void main(String[] args) {
