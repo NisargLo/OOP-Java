@@ -21,19 +21,19 @@ class Bank_Account{
      double accountBalance;
      public void getAccountDetails(){
           System.out.println("\nEnter Account No. :");
-          this.accountNo=sc.nextInt();
+          this.accountNo=Integer.parseInt(sc.nextLine());
           System.out.println("\nEnter Username :");
-          this.userName=sc.next();
+          this.userName=sc.nextLine();
           System.out.println("\nEnter E-Mail :");
-          this.email=sc.next();
+          this.email=sc.nextLine();
           System.out.println("\nEnter Account Type :");
-          this.accountType=sc.next();
+          this.accountType=sc.nextLine();
           System.out.println("\nEnter Account Balance :");
           this.accountBalance=sc.nextDouble();
      }
 
      public void displayAccountDetails(){
-          System.out.println("\n\nAccount Details :");
+          System.out.println("\n\nAccount Details :-");
           System.out.println("\nAccount No. - "+accountNo);
           System.out.println("Username - "+userName);
           System.out.println("E-Mail - "+email);
