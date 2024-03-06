@@ -10,7 +10,7 @@ public class RK_3 {
      
      public static void main(String[] args) {
           Scanner sc=new Scanner(System.in);
-          System.out.println("\nImportant Note : Write your function in 8th line of Java-Code after keyword \'return\' and before \';\'");
+          System.out.println("\nImportant Note : Write your function in 8th line of Java-Code after keyword 'return' and before ';'");
           System.out.println("\nEnter h :");
           double h=sc.nextDouble(),k1,k2,k3;
 
