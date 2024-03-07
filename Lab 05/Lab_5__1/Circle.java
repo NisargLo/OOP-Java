@@ -1,10 +1,10 @@
 //Write a program to create circle class with area function to find area of circle.
 
-package Lab_05_1;
+package Lab_5__1;
 
-public class Circle {
+class Circle {
      int r;
      public double Area(double r){
-          return Math.PI*r*r;
+          return Math.PI*Math.pow(r,2);
      }
 }

@@ -1,4 +1,4 @@
-package Lab_07_1;
+package Lab_7__1;
 
 abstract class Vegetable{
     protected String name;

@@ -15,6 +15,18 @@ public class L6_5 {
     }
 }
 
-class ThreeDPoint{
+class ThreeDPoint extends MyPoint{
+    int Z;
 
+    ThreeDPoint(){
+        X=0;
+        Y=0;
+        Z=0;
+    }
+
+    ThreeDPoint(int X, int Y, int Z){
+        this.X=X;
+        this.Y=Y;
+        this.Z=Z;
+    }
 }

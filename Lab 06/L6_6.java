@@ -41,11 +41,6 @@ class Animal{
 }
 
 class Tiger extends Animal{
-    /*
-        Super keyword is used to call a constructor of parent class from child class.
-        If we don't use super keyword then it will create object with default values of parent class attributes.
-        But if we use super keyword then it will not create object with default values of parent class attributes and assign null or 0 to them.
-    */
     String type_of_animal=new String();
     String color=new String();
     public Tiger(){
