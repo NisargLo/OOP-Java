@@ -26,7 +26,7 @@ public class L6_2 {
 }
 
 class Book{
-    private String author_name;
+    private final String author_name;
     public Book(){
         this.author_name="Nisarg Lo";
     }
@@ -36,7 +36,7 @@ class Book{
 }
 
 class  Book_Publication extends Book {
-    private String title;
+    private final String title;
     Book_Publication(){
         this.title="ABCDE";
     }
@@ -46,7 +46,7 @@ class  Book_Publication extends Book {
 }
 
 class Paper_Publication extends Book {
-    private String title;
+    private final String title;
     Paper_Publication(){
         this.title="VWXYZ";
     }
