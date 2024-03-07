@@ -10,13 +10,14 @@
 
 public class L6_4 {
     public static void main(String[] args) {
-        MyPoint mp0=new MyPoint();
-        MyPoint mp1=new MyPoint(1,2);
-        MyPoint mp2=new MyPoint(3,4);
-        double ans1=mp1.distance(mp0);
-        double ans2=mp2.distance(7,8);
-        System.out.println("\nDistance between points ("+mp1.X+","+mp1.Y+") & ("+mp0.X+","+mp0.Y+") = "+ans1+" Units");
-        System.out.println("\nDistance between points ("+mp2.X+","+mp2.Y+") & ("+mp2.S1+","+mp2.S2+") = "+ans2+" Units");
+        MyPoint[] mp=new MyPoint[3];
+        mp[0]=new MyPoint();
+        mp[1]=new MyPoint(1,2);
+        mp[2]=new MyPoint(3,4);
+        double ans1=mp[1].distance(mp[0]);
+        double ans2=mp[2].distance(7,8);
+        System.out.println("\nDistance between points ("+mp[1].X+","+mp[1].Y+") & ("+mp[0].X+","+mp[0].Y+") = "+ans1+" Units");
+        System.out.println("\nDistance between points ("+mp[2].X+","+mp[2].Y+") & ("+mp[2].S1+","+mp[2].S2+") = "+ans2+" Units\n");
     }
 }
 

@@ -11,13 +11,14 @@
 
 public class L6_5 {
     public static void main(String[] args) {
-        ThreeDPoint tdp0=new ThreeDPoint();
-        ThreeDPoint tdp1=new ThreeDPoint(1,2,3);
-        ThreeDPoint tdp2=new ThreeDPoint(6,7,8);
-        double ans1=tdp1.distance(tdp0);
-        double ans2=tdp2.distance(10,11,12);
-        System.out.println("\nDistance between points ("+tdp1.X+","+tdp1.Y+","+tdp1.getZ()+") & ("+tdp0.X+","+tdp0.Y+","+tdp0.getZ()+") = "+ans1+" Units");
-        System.out.println("\nDistance between points ("+tdp2.X+","+tdp2.Y+","+tdp2.getZ()+") & ("+tdp2.S1+","+tdp2.S2+","+tdp2.S3+") = "+ans2+" Units");
+        ThreeDPoint[] tdp=new ThreeDPoint[3];
+        tdp[0]=new ThreeDPoint();
+        tdp[1]=new ThreeDPoint(1,2,3);
+        tdp[2]=new ThreeDPoint(6,7,8);
+        double ans1=tdp[1].distance(tdp[0]);
+        double ans2=tdp[2].distance(10,11,12);
+        System.out.println("\nDistance between points ("+tdp[1].X+","+tdp[1].Y+","+tdp[1].getZ()+") & ("+tdp[0].X+","+tdp[0].Y+","+tdp[0].getZ()+") = "+ans1+" Units");
+        System.out.println("\nDistance between points ("+tdp[2].X+","+tdp[2].Y+","+tdp[2].getZ()+") & ("+tdp[2].S1+","+tdp[2].S2+","+tdp[2].S3+") = "+ans2+" Units\n");
     }
 }
 
