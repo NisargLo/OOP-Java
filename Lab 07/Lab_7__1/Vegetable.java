@@ -1,10 +1,10 @@
 package Lab_7__1;
 
 abstract class Vegetable{
-    protected String name;
-    protected String color;
+    String name;
+    String color;
     abstract void display();
-    public abstract String getName();
+    protected abstract String getName();
 
     Vegetable(String name, String color){
         this.color=color;
@@ -21,12 +21,12 @@ class Potato extends Vegetable{
         super(name, color);
     }
 
-    public void display(){
+    protected void display(){
         System.out.println("\nName of Vegetable - "+super.name);
         System.out.println("Color of Vegetable - "+super.color);
     }
 
-    public String getName() {
+    protected String getName() {
         return "Potato";
     }
 
@@ -37,12 +37,12 @@ class Brinjal extends Vegetable{
         super(name, color);
     }
 
-    public void display(){
+    protected void display(){
         System.out.println("\nName of Vegetable - "+super.name);
         System.out.println("Color of Vegetable - "+super.color);
     }
 
-    public String getName() {
+    protected String getName() {
         return "Brinjal";
     }
 
@@ -53,12 +53,12 @@ class Tomato extends Vegetable{
         super(name, color);
     }
 
-    public void display(){
+    protected void display(){
         System.out.println("\nName of Vegetable - "+super.name);
         System.out.println("Color of Vegetable - "+super.color);
     }
 
-    public String getName() {
+    protected String getName() {
         return "Tomato";
     }
 }

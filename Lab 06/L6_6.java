@@ -22,18 +22,18 @@ public class L6_6 {
 class Animal{
     int legs;
     int age;
-    public Animal(){
+    Animal(){
         legs=4;
         age=10;
         System.out.println("\n* Default Constructor Animal");
     }
 
-    public Animal(int legs){
+    Animal(int legs){
         this.legs=legs;
         System.out.println("\n* Paramiterised Constructor Animal");
     }
 
-    public void display(){
+    protected void display(){
         System.out.println("\n* Paramiterised Method Animal :-");
         System.out.println("Age of Animal - "+this.age);
         System.out.println("No. of Legs of Animal - "+this.legs);
@@ -43,13 +43,13 @@ class Animal{
 class Tiger extends Animal{
     String type_of_animal=new String();
     String color=new String();
-    public Tiger(){
+    Tiger(){
         type_of_animal="Herbivore";
         color="Brown Color";
         System.out.println("\n* Default Constructor Tiger");
     }
 
-    public Tiger(int age, int legs, String type_of_animal, String color){
+    Tiger(int age, int legs, String type_of_animal, String color){
         super(legs);
         super.age=age;
         this.type_of_animal=type_of_animal;
@@ -57,7 +57,7 @@ class Tiger extends Animal{
         System.out.println("\n* Paramiterised Constructor Tiger");
     }
 
-    public void display(){
+    protected void display(){
         super.display();
         System.out.println("\n* Paramiterised Method Tiger :-");
         System.out.println("Type of Animal - "+this.type_of_animal);

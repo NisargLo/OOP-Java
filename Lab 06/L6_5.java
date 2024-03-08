@@ -37,15 +37,15 @@ class ThreeDPoint extends MyPoint{
         this.Z=Z;
     }
 
-    public int getZ(){
+    protected int getZ(){
         return Z;
     }
 
-    public double distance(ThreeDPoint obj){
+    protected double distance(ThreeDPoint obj){
         return Math.pow( Math.pow(obj.X-this.X,2) + Math.pow(obj.Y-this.Y,2) + Math.pow(obj.Z-this.Z,2) ,0.5);
     }
 
-    public double distance(int X, int Y, int Z){
+    protected double distance(int X, int Y, int Z){
         S1=X;
         S2=Y;
         S3=Z;

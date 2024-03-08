@@ -12,7 +12,7 @@ public class L6_7 {
 final class Pie{
     BigDecimal value_of_pie=new BigDecimal(Math.PI);
 
-    final BigDecimal getPie(){
+    final protected BigDecimal getPie(){
         return value_of_pie;
     }
 }
