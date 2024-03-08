@@ -13,7 +13,7 @@ public class Distance_2Points {
 class Distance{
     Scanner sc = new Scanner(System.in);
     int[] point = new int[4];
-    public Distance(){
+    Distance(){
         for(byte i=0;i<4;i++){
             if(i==0){
                 System.out.println("\nPoint 1 :-");
@@ -32,7 +32,7 @@ class Distance{
         }
     }
 
-    public double find_Distance(){
+    protected double find_Distance(){
         return Math.pow( Math.pow(point[2]-point[0],2) + Math.pow(point[3]-point[1],2) ,0.5);
     }
 }

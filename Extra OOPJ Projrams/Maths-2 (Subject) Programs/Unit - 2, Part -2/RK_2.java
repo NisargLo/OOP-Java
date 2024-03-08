@@ -3,7 +3,7 @@
 import java.util.Scanner;
 
 public class RK_2 {
-     public double func(double x,double y){
+     private double func(double x,double y){
           // Write your function below :-
           return (y-x)/(Math.pow(x,0.5)*Math.pow(y,0.5)) ;
      }

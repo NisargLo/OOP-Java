@@ -22,7 +22,7 @@ class Class_Attendance{
     String[] b=new String[267];
     short l=(short)(b.length),i;
     byte c=0;
-    public Class_Attendance(){
+    Class_Attendance(){
         Scanner sc=new Scanner(System.in);
         for(i=0;i<l;i++){
             b[i] = null;
@@ -46,7 +46,7 @@ class Class_Attendance{
         }
     }
 
-    public void printAttendance(){
+    protected void printAttendance(){
         for(i=0;i<l;i++) {
             if (Objects.equals(b[i],"0")) {
                 c = 7;
@@ -66,7 +66,7 @@ class Class_Attendance{
         }
     }
 
-    public void modifyAttendance(){
+    protected void modifyAttendance(){
         c=0;
         Scanner sc=new Scanner(System.in);
         while(i!=10){

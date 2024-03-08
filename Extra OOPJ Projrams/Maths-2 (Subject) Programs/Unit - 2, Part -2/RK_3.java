@@ -3,7 +3,7 @@
 import java.util.Scanner;
 
 public class RK_3 {
-     public double func(double x,double y){
+     private double func(double x,double y){
           // Write your function below :-
           return ((y*y)-(x*x))/((y*y)+(x*x)) ;
      }

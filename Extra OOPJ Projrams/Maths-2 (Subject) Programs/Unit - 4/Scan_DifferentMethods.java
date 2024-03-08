@@ -13,7 +13,7 @@ public class Scan_DifferentMethods {
      }
      double[] x=new double[n];
      double[] y=new double[n];
-     public Scan_DifferentMethods(){
+     protected Scan_DifferentMethods(){
           Scanner sc=new Scanner(System.in);
           for(i=0;i<x.length;i++){
                System.out.println("\nEnter X ( "+(i+1)+" ) :");
@@ -26,28 +26,28 @@ public class Scan_DifferentMethods {
           System.out.println("\nEnter value of 'X' at which you want to find 'Y' :");
           d=sc.nextDouble();
      }
-     public int factorial(int x){
+     protected int factorial(int x){
           m1=1;
           for(i=1;i<=x;i++){
                m1*=i;
           }
           return m1;
      }
-     public double p_Minus(double p, int b){
+     protected double p_Minus(double p, int b){
           m2=1;
           for(i=0;i<b;i++){
                m2*=(p-i);
           }
           return m2;
      }
-     public double p_Plus(double p, int b){
+     protected double p_Plus(double p, int b){
           m2=1;
           for(i=0;i<b;i++){
                m2*=(p+i);
           }
           return m2;
      }
-     public double p_Minus_Plus(double p, int b){
+     protected double p_Minus_Plus(double p, int b){
           t1=t2=0;
           m2=1;
           for(i=0;i<b;i++){
@@ -64,7 +64,7 @@ public class Scan_DifferentMethods {
           }
           return m2;
      }
-     public double p_Plus_Minus(double p, int b){
+     protected double p_Plus_Minus(double p, int b){
           t1=t2=0;
           m2=1;
           for(i=0;i<b;i++){

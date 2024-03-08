@@ -3,7 +3,7 @@
 import java.util.Scanner;
 
 public class RK_4 {
-     public double func(double x,double y){
+     private double func(double x,double y){
           // Write your function below :-
           return 3*(Math.pow(Math.E,x))+(2*y) ;
      }
