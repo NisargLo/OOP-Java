@@ -22,16 +22,16 @@ public class L5_5 {
 
 class Complex_Number{
     double real,imaginary;
-    public Complex_Number(double real){
+    protected Complex_Number(double real){
         this.real=real;
         System.out.println("\nReal No. = "+real);
     }
 
-    public Complex_Number(double real, double imaginary){
+    protected Complex_Number(double real, double imaginary){
         this.imaginary=imaginary;
         System.out.println("\nImaginary No. (Overloaded Constructor) = "+imaginary+" * i");
     }
-    public void Addition(double real, double imaginary){
+    protected void Addition(double real, double imaginary){
         this.real=real;
         this.imaginary=imaginary;
         System.out.println("\nAddition Answer = "+real+" + "+imaginary+" * i");

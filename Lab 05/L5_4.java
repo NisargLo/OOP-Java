@@ -19,7 +19,7 @@ class Bank_Account{
      String email=new String();
      String accountType=new String("Saving");
      double accountBalance;
-     public void getAccountDetails(){
+     protected void getAccountDetails(){
           System.out.println("\nEnter Account No. :");
           this.accountNo=Integer.parseInt(sc.nextLine());
           System.out.println("\nEnter Username :");
@@ -32,7 +32,7 @@ class Bank_Account{
           this.accountBalance=sc.nextDouble();
      }
 
-     public void displayAccountDetails(){
+     protected void displayAccountDetails(){
           System.out.println("\n\nAccount Details :-");
           System.out.println("\nAccount No. - "+accountNo);
           System.out.println("Username - "+userName);

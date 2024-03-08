@@ -28,7 +28,7 @@ class Sentence{
      public Sentence(String s){
           this.s=s;
      }
-     public void vowelCount(){
+     protected void vowelCount(){
           for(int i=0;i<s.length();i++){
                if(s.charAt(i)=='a' || s.charAt(i)=='A'){
                     count_a++;

@@ -46,7 +46,7 @@ class Student {
     double marks;
     double total_credits;
 
-    public Student(int id_no, int no_of_sub) {
+    Student(int id_no, int no_of_sub) {
         this.id_no = id_no;
         this.no_of_sub = no_of_sub;
         this.sub_code = new String[no_of_sub];
@@ -54,7 +54,7 @@ class Student {
         this.grade = new String[no_of_sub];
     }
 
-    public void getNoOfSub() {
+    protected void getNoOfSub() {
         Scanner sc = new Scanner(System.in);
         total_credits = 0;
         for (i = 0; i < no_of_sub; i++) {
@@ -68,7 +68,7 @@ class Student {
         }
     }
 
-    public double calculateSPI() {
+    protected double calculateSPI() {
         marks = 0;
         for (i = 0; i < no_of_sub; i++) {
             if (grade[i].equalsIgnoreCase("A++") || grade[i].equalsIgnoreCase("O")) {

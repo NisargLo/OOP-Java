@@ -33,7 +33,7 @@ class Time{
           this.m=0;
           this.s=0;
      }
-     public void addition(Time t1,Time t2){
+     protected void addition(Time t1,Time t2){
           s=t1.s+t2.s;
           m=t1.m+t2.m;
           h=t1.h+t2.h;

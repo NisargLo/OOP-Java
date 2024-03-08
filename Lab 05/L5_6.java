@@ -18,7 +18,7 @@ public class L5_6 {
 
 class Object_Count{
     static int c=0;
-    public Object_Count(){
+    protected Object_Count(){
         c++;
     }
 }

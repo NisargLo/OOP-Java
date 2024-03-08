@@ -4,7 +4,7 @@ package Lab_5__1;
 
 class Circle {
      int r;
-     public double Area(double r){
+     protected double Area(double r){
           return Math.PI*Math.pow(r,2);
      }
 }

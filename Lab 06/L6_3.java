@@ -30,7 +30,7 @@ class Member{
     String address;
     int salary;
 
-    public void scanDetails(){
+    protected void scanDetails(){
         Scanner sc=new Scanner(System.in);
         System.out.println("\nEnter Name :");
         this.name=sc.nextLine();
@@ -45,7 +45,7 @@ class Member{
         this.salary=sc.nextInt();
     }
 
-    public void printSalary(){
+    protected void printSalary(){
         System.out.println("\nName - "+name);
         System.out.println("Age - "+age);
         System.out.println("Phone Number - "+phone_number);
@@ -68,7 +68,7 @@ class Employee extends Member{
         this.department=sc.nextLine();
     }
 
-    public void printDetails(){
+    protected void printDetails(){
         System.out.println("\nEmployee :-");
         super.printSalary();
         System.out.println("Specialization - "+specialization);
@@ -90,7 +90,7 @@ class Manager extends Member {
         this.department=sc.nextLine();
     }
 
-    public void printDetails(){
+    protected void printDetails(){
         System.out.println("\nManager :-");
         super.printSalary();
         System.out.println("Specialization - "+specialization);

@@ -27,10 +27,10 @@ public class L6_2 {
 
 class Book{
     private final String author_name;
-    public Book(){
+    protected Book(){
         this.author_name="Nisarg Lo";
     }
-    public void display(){
+    protected void display(){
         System.out.println("\nAuthor Name - "+this.author_name);
     }
 }
@@ -40,7 +40,7 @@ class  Book_Publication extends Book {
     Book_Publication(){
         this.title="ABCDE";
     }
-    public void display(){
+    protected void display(){
         System.out.println("\nDisplay : Book Publication - "+this.title);
     }
 }
@@ -50,7 +50,7 @@ class Paper_Publication extends Book {
     Paper_Publication(){
         this.title="VWXYZ";
     }
-    public void display(){
+    protected void display(){
         System.out.println("\nDisplay : Paper Publication - "+this.title);
     }
 }

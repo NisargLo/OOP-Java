@@ -34,11 +34,11 @@ class MyPoint{
         this.Y=Y;
     }
 
-    public double distance(MyPoint obj){
+    protected double distance(MyPoint obj){
         return Math.pow( Math.pow(obj.X-this.X,2) + Math.pow(obj.Y-this.Y,2) ,0.5);
     }
 
-    public double distance(int X, int Y){
+    protected double distance(int X, int Y){
         S1=X;
         S2=Y;
         return Math.pow( Math.pow(X-this.X,2) + Math.pow(Y-this.Y,2) ,0.5);

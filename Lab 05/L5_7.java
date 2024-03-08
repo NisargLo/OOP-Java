@@ -16,11 +16,11 @@ public class L5_7 {
 
 class Check{
     int n;
-    public void thisN(int n){
+    protected void thisN(int n){
         this.n=n;
     }
 
-    public void printN(){
+    protected void printN(){
         System.out.println("\nYour No. = "+n+"\nHence, 'this' keyword can access 'static' variables of class.\nBut 'this' keyword can't access variables of class if method is 'static'.");
     }
 }
