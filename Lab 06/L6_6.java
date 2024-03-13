@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class L6_6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Animal a=new Animal();
+        Animals a=new Animals();
         System.out.println("\nEnter age of Animal :");
         byte age=sc.nextByte();
         System.out.println("Enter No. of legs of Animal :");
@@ -14,21 +14,21 @@ public class L6_6 {
         String type=sc.next();
         System.out.println("Enter color of Animal :");
         String color=sc.next();
-        Tiger t=new Tiger(age, legs, type, color);
+        Tigers t=new Tigers(age, legs, type, color);
         t.display();
     }
 }
 
-class Animal{
+class Animals{
     int legs;
     int age;
-    Animal(){
+    Animals(){
         legs=4;
         age=10;
         System.out.println("\n* Default Constructor Animal");
     }
 
-    Animal(int legs){
+    Animals(int legs){
         this.legs=legs;
         System.out.println("\n* Paramiterised Constructor Animal");
     }
@@ -40,16 +40,16 @@ class Animal{
     }
 }
 
-class Tiger extends Animal{
+class Tigers extends Animals{
     String type_of_animal=new String();
     String color=new String();
-    Tiger(){
+    Tigers(){
         type_of_animal="Herbivore";
         color="Brown Color";
         System.out.println("\n* Default Constructor Tiger");
     }
 
-    Tiger(int age, int legs, String type_of_animal, String color){
+    Tigers(int age, int legs, String type_of_animal, String color){
         super(legs);
         super.age=age;
         this.type_of_animal=type_of_animal;
