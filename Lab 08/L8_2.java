@@ -8,6 +8,8 @@
     Skip the number if an exception is raised for it, otherwise add it to find total sum.
  */
 
+import java.util.*;
+
 public class L8_2 {
     public static void main(String[] args) {
 
