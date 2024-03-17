@@ -3,7 +3,7 @@ package Lab_7__1;
 abstract class Vegetable{
     String name;
     String color;
-    abstract void display();
+    protected abstract void display();
     protected abstract String getName();
 
     Vegetable(String name, String color){
