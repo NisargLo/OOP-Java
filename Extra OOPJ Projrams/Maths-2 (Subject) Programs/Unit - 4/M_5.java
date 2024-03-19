@@ -35,6 +35,7 @@ public class M_5 {
                               y[j - 1] = 0;
                               y[j] = 0;
                          }
+                         c++;
                     }
                }
           }

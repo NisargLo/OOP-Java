@@ -3,7 +3,7 @@
 public class M_4 {
      public static void main(String[] args) {
           double ans = 0, p;
-          int i, j, t = 0, c = 1, n = Scan_DifferentMethods.n;
+          int i, j, t = 0, c, n = Scan_DifferentMethods.n;
           Scan_DifferentMethods s = new Scan_DifferentMethods();
           double[] x = new double[n];
           double[] y = new double[n];
@@ -24,7 +24,7 @@ public class M_4 {
                     a[i] = 0;
                } else {
                     a[i] = y[t];
-                    if (i % 2 != 0 && i > 0) {
+                    if (i % 2 != 0) {
                          t--;
                     }
                     c = 0;
@@ -35,8 +35,8 @@ public class M_4 {
                               y[j - 1] = 0;
                               y[j] = 0;
                          }
+                         c++;
                     }
-                    c++;
                }
           }
           for (i = 1; i < n; i++) {
