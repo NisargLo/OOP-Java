@@ -1,6 +1,6 @@
 /*
-    Create your own Custom Exception.
-    Store date & time in which Custom Exception occured, in a log file.
+    Create your own Custom Exception & display your own Error Message.
+    Store date & time in which Custom Exception occured, with the Custom Message in a log file.
  */
 
 package Exception;
