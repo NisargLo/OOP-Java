@@ -36,7 +36,7 @@ class Custom_Exception extends Exception{
     protected void saveExceptionToLogFile(){
         PrintStream ps;
         try{
-            ps = new PrintStream(new File("My_Exception.log"));
+            ps = new PrintStream(new File("My_Exception_Errors.log"));
             ps.println(new Date()+getMessage());
         }
         catch(FileNotFoundException fne){
