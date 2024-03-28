@@ -1,4 +1,4 @@
-// Implementing Thread using Runnable Interface
+// Execute Thread by implementing Runnable Interface
 // By making an object of My_Thread in main() method
 
 public class Runnable_Interface1 {

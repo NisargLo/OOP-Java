@@ -1,4 +1,4 @@
-// Implementing Thread using Runnable Interface
+// Execute Thread by implementing Runnable Interface
 // By not making an object of My_Thread in main() method. (Using Anonymous Object)
 
 public class Runnable_Interface2 {

@@ -1,4 +1,4 @@
-// Implementing Thread by extending Thread Class
+// Execute Thread by extending Thread Class
 
 public class Thread_Class {
     public static void main(String[] args) {
