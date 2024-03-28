@@ -1,4 +1,4 @@
-//Write a program to nd that given number or string is palindrome or not.
+// Write a program to nd that given number or string is palindrome or not.
 
 import java.util.Scanner;
 

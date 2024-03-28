@@ -1,10 +1,10 @@
 /*
     Create a class named 'Member' having the following members:
-    1. Name
-    2. Age
-    3. Phone Number
-    4. Address
-    5. Salary
+        1. Name
+        2. Age
+        3. Phone Number
+        4. Address
+        5. Salary
     It also has a method named 'printSalary' which prints the salary of the members.
     Two classes 'Employee' and Manager' inherits the 'Member' class.
     The 'Employee' and 'Manager' classes have data members 'specialization' and 'department' respectively.
