@@ -1,4 +1,4 @@
-//WAP that counts the number of objects created using static.
+// WAP that counts the number of objects created using static.
 
 import java.util.Scanner;
 
