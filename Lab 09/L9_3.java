@@ -26,7 +26,7 @@ public class L9_3 {
         }
         Matrix[] thread=new Matrix[m];
         for(i=0;i<A.length;i++){
-            thread[i]=new Matrix(A[i]);
+//            thread[i]=new Matrix(A[i]);
         }
 
     }
@@ -36,7 +36,7 @@ class Matrix extends Thread{
     int i;
     @Override
     public void run(){
-        for(i=0;i<;i++){
+        for(i=0;i<10;i++){
 
         }
     }
