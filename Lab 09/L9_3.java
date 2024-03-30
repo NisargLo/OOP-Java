@@ -13,15 +13,15 @@ import java.util.*;
 public class L9_3 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        byte i;
-        System.out.println("\nEnter No. of rows :");
+        byte i,j;
+        System.out.println("\nEnter no. of rows :");
         int m=sc.nextInt();
-        System.out.println("\nEnter No. of columns :");
+        System.out.println("\nEnter no. of columns :");
         int n=sc.nextInt();
         int[][] A = new int[m][n];
         for(i=0;i<m;i++){
             System.out.println();
-            for(byte j=0;j<n;j++){
+            for(j=0;j<n;j++){
                 System.out.println("Enter A["+(i+1)+"]["+(j+1)+"] :");
                 A[i][j]=sc.nextInt();
             }
@@ -32,14 +32,14 @@ public class L9_3 {
             thread[i]=new Matrix(A[i],i);
             thread[i].start();
         }
-
     }
 }
 
 class Matrix extends Thread{
-    private byte i;
-    private int[] row;
-    private int rowIndex, s;
+    private final int[] row;
+    private final int rowIndex;
+    public int sum;
+
     Matrix(int[] row, int rowIndex){
         this.row=row;
         this.rowIndex=rowIndex;
@@ -47,14 +47,10 @@ class Matrix extends Thread{
 
     @Override
     public void run(){
-        s=0;
+        sum = 0;
         for(int value: row){
-            s += value;
+            sum += value;
         }
-        System.out.println("\nSum of elements in row " + rowIndex + " : " + s);
-    }
-
-    protected int getSum(){
-        return s;
+        System.out.println("\nSum of elements in row " + (rowIndex+1) + " = " + sum);
     }
 }
