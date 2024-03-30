@@ -3,7 +3,6 @@
     One thread displays "Good Morning" every 1000 milliseconds & another thread displays "Good Afternoon" every 3000 milliseconds. 
     Create the threads by implementing the Runnable interface.
 
-
     (Execute Thread by implementing Runnable Interface - Using Anonymous Object)
  */
 

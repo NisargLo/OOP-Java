@@ -10,10 +10,9 @@ public class L8_3 {
     public static void main(String[] args) throws InSufficientFundException{
         Scanner sc=new Scanner(System.in);
         Account a=new Account();
-        System.out.println("\nEnter your Bank Balance :");
-        a.bank_balance=sc.nextDouble();
+
         String s;
-        double d,w=0;
+        double d,w;
         System.out.println("\nEnter 'D' for depositing & 'W' for withdrawing money.");
         s=sc.next();
         if(s.equalsIgnoreCase("D")){
@@ -26,13 +25,13 @@ public class L8_3 {
             try{
                 System.out.println("\nHow much money, do you want to withdraw ?");
                 w=sc.nextDouble();
-                if(w>a.bank_balance){
+                if(w>a.getBank_balance()){
                     throw new InSufficientFundException("Your Bank Balance isn't sufficient.");
                 }
             }
             catch (InSufficientFundException ife){
                 ife.printStackTrace();
-                System.out.println("\nBank Balance - "+a.bank_balance);
+                System.out.println("\nBank Balance - "+a.getBank_balance());
                 return;
             }
             a.withdrawMoney(w);
@@ -42,11 +41,20 @@ public class L8_3 {
 }
 
 class Account{
-    double bank_balance;
+    private double bank_balance;
 
-    protected double depositMoney(double d){
-        bank_balance = bank_balance + d;
+    Account(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("\nEnter your Bank Balance :");
+        bank_balance=sc.nextDouble();
+    }
+
+    protected double getBank_balance() {
         return bank_balance;
+    }
+
+    protected void depositMoney(double d){
+        bank_balance = bank_balance + d;
     }
 
     protected void withdrawMoney(double w){

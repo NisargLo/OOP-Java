@@ -4,6 +4,8 @@
         b. Create m number of threads
         c. Each thread computes summation (sum) of elements of one row, i.e. ith row of the matrix is processed by ith thread (where 0 <= i < m).
         d. Print the results.
+
+    (Execute Thread by extending Thread Class)
  */
 
 import java.util.*;
@@ -11,7 +13,7 @@ import java.util.*;
 public class L9_3 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int i;
+        byte i;
         System.out.println("\nEnter No. of rows :");
         int m=sc.nextInt();
         System.out.println("\nEnter No. of columns :");
@@ -24,21 +26,35 @@ public class L9_3 {
                 A[i][j]=sc.nextInt();
             }
         }
+        sc.close();
         Matrix[] thread=new Matrix[m];
-        for(i=0;i<A.length;i++){
-//            thread[i]=new Matrix(A[i]);
+        for(i=0;i<m;i++){
+            thread[i]=new Matrix(A[i],i);
+            thread[i].start();
         }
 
     }
 }
 
 class Matrix extends Thread{
-    int i;
-    @Override
-    public void run(){
-        for(i=0;i<10;i++){
-
-        }
+    private byte i;
+    private int[] row;
+    private int rowIndex, s;
+    Matrix(int[] row, int rowIndex){
+        this.row=row;
+        this.rowIndex=rowIndex;
     }
 
+    @Override
+    public void run(){
+        s=0;
+        for(int value: row){
+            s += value;
+        }
+        System.out.println("\nSum of elements in row " + rowIndex + " : " + s);
+    }
+
+    protected int getSum(){
+        return s;
+    }
 }
