@@ -29,20 +29,25 @@ public class L9_3 {
         sc.close();
         Matrix[] thread=new Matrix[m];
         for(i=0;i<m;i++){
-            thread[i]=new Matrix(A[i],i);
+            thread[i]=new Matrix(A[i]);
             thread[i].start();
+            try {
+                thread[i].join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            thread[i].printSum();
         }
     }
 }
 
 class Matrix extends Thread{
     private final int[] row;
-    private final int rowIndex;
     public int sum;
+    byte i;
 
-    Matrix(int[] row, int rowIndex){
+    Matrix(int[] row){
         this.row=row;
-        this.rowIndex=rowIndex;
     }
 
     @Override
@@ -51,6 +56,9 @@ class Matrix extends Thread{
         for(int value: row){
             sum += value;
         }
-        System.out.println("\nSum of elements in row " + (rowIndex+1) + " = " + sum);
+    }
+
+    protected void printSum(){
+        System.out.println("\nSum of elements in row " + (i+1) + " = " + sum);
     }
 }
