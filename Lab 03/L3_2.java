@@ -10,7 +10,7 @@ public class L3_2 {
         int start = 0,x=1;
         int end = s.length()-1;
 
-        //Using While Loop
+    //Using While Loop
         while(start!=end){
             if(s.charAt(start)!=s.charAt(end)){
                 x=0;

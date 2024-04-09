@@ -31,6 +31,7 @@ class Complex_Number{
         this.imaginary=imaginary;
         System.out.println("\nImaginary No. (Overloaded Constructor) = "+imaginary+" * i");
     }
+
     protected void Addition(double real, double imaginary){
         this.real=real;
         this.imaginary=imaginary;

@@ -1,7 +1,7 @@
 /*
-    Declare a class called student having following data members: id_no, no_of_sub, sub_code, sub_credits, grade and spi. 
-    Define constructor and calculateSPI methods. Define main to instantiate an array for objects of class student to process data of n students to be given as
-    command line arguments.
+    Declare a class called student having the following data members: id_no, no_of_sub, sub_code, sub_credits, grade and spi.
+    Define constructor and calculateSPI methods.
+    Define main to instantiate an array for objects of class student to process data of n students to be given as command line arguments.
 */
 
 import java.util.Scanner;

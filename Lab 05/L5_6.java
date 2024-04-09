@@ -11,7 +11,7 @@ public class L5_6 {
         for(int i=0;i<n;i++){
             c[i] = new Object_Count();
         }
-        System.out.println("Object created "+Object_Count.c+" times.");
+        System.out.println("\nObject created "+Object_Count.c+" times.");
         sc.close();
     }
 }
