@@ -13,14 +13,14 @@ public class L6_1 {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(args[0]);
         System.out.println("\nNO. of Students = " + n);
-        Student[] s = new Student[n];
+        student[] s = new student[n];
         for (int i = 0; i < n; i++) {
             System.out.println("\nStudent " + (i + 1) + " :-");
             System.out.println("Enter ID No. :");
             int id_no = sc.nextInt();
             System.out.println("Enter No. of Subjects :");
             int no_of_sub = sc.nextInt();
-            s[i] = new Student(id_no, no_of_sub);
+            s[i] = new student(id_no, no_of_sub);
         }
         for (i = 0; i < n; i++) {
             System.out.println("\nStudent " + (i + 1) + " :-");
@@ -35,7 +35,7 @@ public class L6_1 {
     }
 }
 
-class Student {
+class student {
     static short i;
     int id_no;
     int no_of_sub;
@@ -46,7 +46,7 @@ class Student {
     double marks;
     double total_credits;
 
-    Student(int id_no, int no_of_sub) {
+    student(int id_no, int no_of_sub) {
         this.id_no = id_no;
         this.no_of_sub = no_of_sub;
         this.sub_code = new String[no_of_sub];
