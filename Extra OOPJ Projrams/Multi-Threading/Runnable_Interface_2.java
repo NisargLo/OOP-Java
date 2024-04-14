@@ -1,7 +1,7 @@
 // Execute Thread by implementing Runnable Interface
 // By not making an object of My_Thread in main() method. (Using Anonymous Object)
 
-public class Runnable_Interface2 {
+public class Runnable_Interface_2 {
     public static void main(String[] args) {
         Thread t1=new Thread(new Runnable(){
             public void run(){

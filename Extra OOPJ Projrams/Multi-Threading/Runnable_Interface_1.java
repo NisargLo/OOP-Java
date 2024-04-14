@@ -1,7 +1,7 @@
 // Execute Thread by implementing Runnable Interface
 // By making an object of My_Thread in main() method
 
-public class Runnable_Interface1 {
+public class Runnable_Interface_1 {
     public static void main(String[] args) {
         My_Thread3 mt3=new My_Thread3();
         My_Thread4 mt4=new My_Thread4();
