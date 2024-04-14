@@ -1,5 +1,6 @@
 /*
     Producer-Consumer Program
+    (Producer makes iPhone, while Consumer buys iPhone, both happen parallel at an interval of 250 milliseconds.)
  */
 
 public class Producer_Consumer__Program {
@@ -43,7 +44,7 @@ class Consumer implements Runnable {
 }
 
 class iPhone {
-    int c = 50000;
+    private int c = 50000;
 
     synchronized protected void produce() {
         while (c >= 100000) {
@@ -57,7 +58,7 @@ class iPhone {
         System.out.println("Producer increased count of iPhone : " + c);
         notifyAll();
         try {
-            Thread.sleep(100);
+            Thread.sleep(250);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -75,7 +76,7 @@ class iPhone {
         System.out.println("Consumer decreased count of iPhone : " + c);
         notifyAll();
         try {
-            Thread.sleep(100);
+            Thread.sleep(250);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
