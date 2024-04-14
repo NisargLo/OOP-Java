@@ -7,13 +7,15 @@ import java.io.*;
 
 public class L10_1 {
     public static void main(String[] args) throws Exception {
+        File f;
+        BufferedReader br = null;
         try {
-            File f = new File("C:/Users/student/Desktop/Nisarg/Java/Lab 10/File.txt");
+            f = new File("C:/Users/student/Desktop/Nisarg/Java/Lab 10/File.txt");
             if (!f.exists()) {
                 throw new FileNotFoundException("\nFile not found.");
             }
             int countChar = 0, countWord = 0, countLine = 0;
-            BufferedReader br = new BufferedReader(new FileReader(f));
+            br = new BufferedReader(new FileReader(f));
             String line = br.readLine();
             while (line != null) {
                 countLine++;
@@ -27,6 +29,10 @@ public class L10_1 {
             System.out.println("\nNo. of Lines in File = " + countLine);
         } catch (Exception e) {
             e.printStackTrace();
+        }
+        finally {
+            assert br != null;
+            br.close();
         }
     }
 }

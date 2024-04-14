@@ -6,9 +6,11 @@ import java.util.*;
 import java.io.*;
 
 public class L10_2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         short c = 0, i;
         Scanner sc = new Scanner(System.in);
+        BufferedReader br = null;
+        BufferedWriter bw = null;
         try {
             File f1 = new File("File1.txt");
             File f2 = new File("File2.txt");
@@ -20,8 +22,8 @@ public class L10_2 {
             String word1 = sc.next();
             System.out.println("\nEnter Word 2 :");
             String word2 = sc.next();
-            BufferedReader br = new BufferedReader(new FileReader(f1));
-            BufferedWriter bw = new BufferedWriter(new FileWriter(f2));
+            br = new BufferedReader(new FileReader(f1));
+            bw = new BufferedWriter(new FileWriter(f2));
             String line = br.readLine();
             while (line != null) {
                 StringBuilder changedLine = new StringBuilder();
@@ -38,11 +40,13 @@ public class L10_2 {
                 bw.newLine();
                 line = br.readLine();
             }
-            br.close();
-            bw.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("\nReplacement counts : " + c);
+        finally{
+            System.out.println("\nReplacement counts : " + c);
+            br.close();
+            bw.close();
+        }
     }
 }

@@ -9,7 +9,7 @@
  */
 
 public class L8_2 {
-    public static void main(String[] args) throws My_Exception {
+    public static void main(String[] args) {
         int n,i=0,s=0;
         try{
             while (i<args.length){
@@ -26,7 +26,9 @@ public class L8_2 {
         catch (My_Exception me){
             me.printStackTrace();
         }
-        System.out.println("Total Sum until First Custom Exception occured = "+s);
+        finally{
+            System.out.println("Total Sum until First Custom Exception occured = "+s);
+        }
     }
 }
 

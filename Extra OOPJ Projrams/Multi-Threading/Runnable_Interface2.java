@@ -17,7 +17,7 @@ public class Runnable_Interface2 {
                 System.out.println("\nChild Thread One Exiting");
             }
         });
-        Thread t2=new Thread(new My_Thread4(){
+        Thread t2=new Thread(new Runnable(){
             public void run() {
                 try {
                     for (byte i=1; i<=5; i++) {

@@ -7,7 +7,7 @@
 import java.util.*;
 
 public class L8_3 {
-    public static void main(String[] args) throws InSufficientFundException{
+    public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         Account a=new Account();
 
