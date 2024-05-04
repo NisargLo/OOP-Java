@@ -11,7 +11,7 @@ public class L4_3 {
      for(int i=0;i<a.length;i++){
           System.out.println("Enter NO. "+(i+1));
           a[i] = sc.nextInt();
-          s = s + a[i];
+          s += a[i];
      }
      av = (float)s/4;
      System.out.println("Average = "+av);

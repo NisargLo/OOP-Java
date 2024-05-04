@@ -34,6 +34,6 @@ public class L8_2 {
 
 class My_Exception extends Exception {
     My_Exception(String S) {
-            super(S);
+        super(S);
     }
 }

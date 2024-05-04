@@ -37,11 +37,11 @@ class Time{
           s=t1.s+t2.s;
           m=t1.m+t2.m;
           h=t1.h+t2.h;
-          while(s>60){
+          while(s>=60){
                s-=60;
                m+=1;
           }
-          while(m>60){
+          while(m>=60){
                m-=60;
                h+=1;
           }

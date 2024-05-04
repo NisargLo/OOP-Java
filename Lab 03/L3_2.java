@@ -7,19 +7,20 @@ public class L3_2 {
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter String :");
         String s = sc.nextLine();
-        int start = 0,x=1;
+        int start = 0;
+        boolean b=true;
         int end = s.length()-1;
 
     //Using While Loop
         while(start!=end){
             if(s.charAt(start)!=s.charAt(end)){
-                x=0;
+                b=false;
                 break;
             }
             start++;
             end--;
         }
-        if(x==0){
+        if(!b){
             System.out.println("\nNot Palindrome (While Loop)");
         }
         else{
@@ -27,13 +28,13 @@ public class L3_2 {
         }
 
     //Using For Loop
-        for(start=0,x=1,end=s.length()-1;start<=(s.length()/2);start++,end--){
+        for(start=0,b=true,end=s.length()-1;start<=(s.length()/2);start++,end--){
             if(s.charAt(start)!=s.charAt(end)){
-                x=0;
+                b=false;
                 break;
             }
         }
-        if(x==0){
+        if(!b){
             System.out.println("Not Palindrome (For Loop)");
         }
         else{

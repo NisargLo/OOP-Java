@@ -8,8 +8,8 @@ public class L4_6 {
                     System.out.print(args[i]+" ");
                }
                else{
-                    System.out.println("Error: Could not run Java Program - L4_6.java\nError occured at - \'"+args[i]+"'");
-                    return;
+                    System.out.println("Error: Could not run Java Program - L4_6.java\nError occured at - '"+args[i]+"'");
+                    System.exit(0);
                }
           }
      }
