@@ -4,7 +4,7 @@
  */
 
 import java.io.*;
-import java.util.Scanner;
+import java.util.*;
 
 public class L10_4 {
     public static void main(String[] args) {
