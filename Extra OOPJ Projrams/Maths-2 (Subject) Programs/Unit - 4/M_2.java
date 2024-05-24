@@ -3,8 +3,8 @@
 public class M_2 {
      public static void main(String[] args) {
           double ans = 0, p;
-          int i, j, n = Scan_DifferentMethods.n;
-          Scan_DifferentMethods s = new Scan_DifferentMethods();
+          int i, j, n = Scan_DifferentMethods_Newton.n;
+          Scan_DifferentMethods_Newton s = new Scan_DifferentMethods_Newton();
           double[] x = new double[n];
           double[] y = new double[n];
           double[] a = new double[n];

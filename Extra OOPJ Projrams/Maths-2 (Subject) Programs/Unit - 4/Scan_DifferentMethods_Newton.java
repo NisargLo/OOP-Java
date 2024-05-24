@@ -1,8 +1,8 @@
-//Scan values of X & Y, and methods which are useful for Unit-4
+//Scan values of X & Y, and methods which are useful for Unit-4 (Newton Forward & Backward)
 
 import java.util.Scanner;
 
-public class Scan_DifferentMethods {
+public class Scan_DifferentMethods_Newton {
      static int n;
      int m1,t1,t2,i;
      double m2,d;
@@ -13,7 +13,7 @@ public class Scan_DifferentMethods {
      }
      double[] x=new double[n];
      double[] y=new double[n];
-     protected Scan_DifferentMethods(){
+     protected Scan_DifferentMethods_Newton(){
           Scanner sc=new Scanner(System.in);
           for(i=0;i<x.length;i++){
                System.out.println("\nEnter X ( "+(i+1)+" ) :");
@@ -44,39 +44,6 @@ public class Scan_DifferentMethods {
           m2=1;
           for(i=0;i<b;i++){
                m2*=(p+i);
-          }
-          return m2;
-     }
-     protected double p_Minus_Plus(double p, int b){
-          t1=t2=0;
-          m2=1;
-          for(i=0;i<b;i++){
-               if(i%2==0){
-                    if(i>0){
-                         t1++;
-                    }
-                    m2*=(p+t1);
-               }
-               else{
-                    t2=~t1;
-                    m2*=(p+t2);
-               }
-          }
-          return m2;
-     }
-     protected double p_Plus_Minus(double p, int b){
-          t1=t2=0;
-          m2=1;
-          for(i=0;i<b;i++){
-               if(i%2!=0){
-                    t1++;
-                    m2*=(p+t1);
-               }
-               else{
-                    t2=~t1;
-                    t2++;
-                    m2*=(p+t2);
-               }
           }
           return m2;
      }
