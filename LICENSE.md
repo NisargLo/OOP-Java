@@ -1,6 +1,6 @@
-<h1>----- Creative Commons Attribution 4.0 International License -----</h1>
+<h1>Creative Commons Attribution 4.0 International License</h1>
 
-* You are free to:
+<h3>You are free to:</h3>h3>
 1. Share: Copy and redistribute the material in any medium or format for any purpose, even commercially.
 2. Adapt: Remix, transform, and build upon the material for any purpose, even commercially.
 
