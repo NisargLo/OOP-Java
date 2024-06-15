@@ -1,3 +1,3 @@
-<i><h1>Semester - 2</h1>
-<h1>Subject : Object-Oriented Programming using Java</h1>
-<h1>Programming Language : Java-22</h1></i>
+<i><h2>Semester - 2</h2>
+<h2>Subject : Object-Oriented Programming using Java</h2>
+<h2>Programming Language : Java</h2></i>
